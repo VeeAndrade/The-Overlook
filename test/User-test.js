@@ -3,7 +3,9 @@ const expect = chai.expect;
 import User from '../src/User';
 
 describe('User', () => {
+
   let user, client
+
   beforeEach(() => {
     client = {"id": 1, "name": "Leatha Ullrich"}
     user = new User(client)
@@ -15,5 +17,14 @@ describe('User', () => {
 
   it('should have a name', () => {
     expect(user.name).to.equal("Leatha Ullrich")
+  });
+
+  it('should be able to book a room', () => {
+    expect(user.bookedRooms).to.eql([])
+  });
+
+  it('should be able to add a booking', () => {
+    
+    expect()
   })
 })
