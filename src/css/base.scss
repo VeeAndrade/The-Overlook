@@ -1,0 +1,110 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../images/cherry-blossom-background-4.jpg')no-repeat center center;
+  background-size: cover;
+}
+
+.header-navbar {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(50, 52, 53);
+  text-align: center;
+  align-items: center;
+}
+
+.header-navbar-button {
+  height: 100%;
+  width: 5%;
+  background-color: rgb(50, 52, 53);
+  border: none;
+  margin: 0 0 0 1%;
+}
+
+.lines {
+    width: 75%;
+    height: 4px;
+    background-color: rgb(211, 211, 211);
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.header-heading {
+  font-size: 2.5em;
+  margin-left: 34%;
+  margin-top: auto;
+  color: rgb(211, 211, 211);
+  font-family: 'Gayathri', sans-serif;
+  font-weight: 100;
+}
+
+.display-section {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-login-section {
+  display: flex;
+  height: 60%; 
+  width: 50%;
+  border-radius: 7px;
+  background: linear-gradient(rgb(176, 176, 176), rgba(255, 255, 255, 0.297));
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-login-header {
+  font-size: 1.5em;
+  color: #522D63;
+}
+
+.user-input-section {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-input-bar {
+  width: 100%;
+  height: 20%;
+  border-radius: 7px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.user-password-bar {
+  @extend .user-input-bar;
+}
+
+.user-login-button {
+  @extend .user-input-bar;
+  color: rgb(176, 176, 176);
+  background-color: #522D63;
+  font-size: 1em;
+  border: none;
+  
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(50, 21, 79);
+    }
+}
