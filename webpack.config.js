@@ -28,13 +28,22 @@ module.exports = {
                 }
               }
             ]
-      }
+      },
     ],
   },
   // Below is needed for webpack-dev-server
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/client.html',
+      filename: 'client.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/manager.html',
+      filename: 'manager.html'
     })
   ],
   devServer: {
