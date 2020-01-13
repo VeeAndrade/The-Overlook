@@ -19,12 +19,7 @@ describe('User', () => {
     expect(user.name).to.equal("Leatha Ullrich")
   });
 
-  it('should be able to book a room', () => {
-    expect(user.bookedRooms).to.eql([])
-  });
-
-  it('should be able to add a booking', () => {
-    
-    expect()
-  })
+  // it('should be able to book a room', () => {
+  //   expect(user.bookedRooms).to.eql([])
+  // });
 })
