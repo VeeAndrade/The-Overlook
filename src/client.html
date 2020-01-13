@@ -19,15 +19,42 @@
       <section class="client-dashboard-display">
         <section class="client-booking-section">
           <h2 class="booking-header">Book your stay</h2>
-          <section class="booking-input-section">
+          <form class="booking-input-section">
             <label class="booking-input-label">Select a date:</label>
             <input class="booking-input-field" type="date" required pattern="\d{4}-\d{2}-\d{2}">
             <button class="booking-date-button">Search</button>
+          </form>
+        </section>
+        <section class="room-booking-container">
+          <section class="room-booking-section">
+            <section class="filter-room-section">
+              <p class="filter-room-label">Filter By Room Type: </p>
+              <select class="select-container">
+                <option class="filter-option" value="single room">Single Room</option>
+                <option class="filter-option" value="suite">Suite</option>
+                <option class="filter-option" value="junior suite">Junior Suite</option>
+                <option class="filter-option" value="residential suite">Residential Suite</option>
+              </select>
+              <button class="submit-option-button">Filter</button>
+            </section>
+            <section class="rooms-available-display">
+              <div class="single-room-info">
+                <div class="single-room-heading-wrapper">
+                  <h6 class="single-room-heading">Type: Residential Suite</h6>
+                </div>
+                <section class="single-room-description">
+                  <p class="single-room-text">Our Residential suite  provides views over landscaped gardens. It has a
+                    seating area, ample storage, digital safe, minibar, and luxurious duck down bedding.This room
+                    comes with 1 queen bed and may or may not have a bidet.</p>
+                    <button class="book-room-button">Select Room</button>
+                  </section>
+              </div>
+            </section>
           </section>
         </section>
           <section class="client-dashboard-summary">
             <section class="client-heading-section">
-              <h3 class="client-welcome-heading">Welcome User</h3>
+              <h3 class="client-welcome-heading"></h3>
               <h3 class="client-dashboard-heading">Dashboard</h3>
             </section>
             <section class="data-display-section">
@@ -36,42 +63,14 @@
                   <h5 class="client-previous-bookings-heading">Previous Booking's Summary</h5>
                 </section>
                 <section class="previous-booking-display">
-                  <div class="single-booking-info">
-                    <div class="booking-detail-top">
-                      <p class="left-side-detail">Date: 2020/02/04</p>
-                      <p class="right-side-detail">Rm#: 15</p>
-                    </div>
-                    <div class="booking-detail-middle">
-                      <p class="left-side-detail">Type: Suite</p>
-                      <p class="right-side-detail">Number of Beds: 2</p>
-                    </div>
-                    <div class="booking-detail-bottom">
-                      <p class="left-side-detail">Bedsize: Queen</p>
-                      <p class="right-side-detail">Cost: $354.4</p>
-                    </div>
-                  </div>
                 </section>
-              <aside class="booking-summary-cost">Total Amount Spent: $1000.00</aside>
+              <aside class="booking-summary-cost"></aside>
             </section>
             <section class="upcoming-bookings-container">
               <section class="upcoming-bookings-header-wrapper">
                 <h5 class="upcoming-bookings-header">Upcoming Reservations</h5>
               </section>
               <section class="upcoming-bookings-display">
-                <div class="single-upcoming-info">
-                  <div class="upcoming-detail-top">
-                    <p class="left-side-detail">Date: 2020/02/04</p>
-                    <p class="right-side-detail">Rm#: 15</p>
-                  </div>
-                  <div class="upcoming-detail-middle">
-                    <p class="left-side-detail">Type: Suite</p>
-                    <p class="right-side-detail">Number of Beds: 2</p>
-                  </div>
-                  <div class="upcoming-detail-bottom">
-                    <p class="left-side-detail">Bedsize: Queen</p>
-                    <p class="right-side-detail">Cost: $354.4</p>
-                  </div>
-                </div>
               </section>
             </section>
           </section>
