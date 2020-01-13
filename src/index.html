@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Webpack Starter Kit</title>
+    <title>The Overlook</title>
+    <link href="https://fonts.googleapis.com/css?family=Gayathri:100,400|Montserrat:300,400&display=swap"
+      rel="stylesheet">
   </head>
   <body>
-    <h1>Webpack Starter Kit</h1>
-
-    <img src="./images/turing-logo.png" alt="turing logo" height="100px" width="100px">
-
-    <!-- Do not include the index.js or main.bundle.js file here - it is done automatically by the webpack server -->
+    <main class="main-section">
+      <header class="header-navbar">
+        <button class="header-navbar-button">
+          <div class="lines line1"></div>
+          <div class="lines line2"></div>
+          <div class="lines line3"></div>
+        </button>
+        <h1 class="header-heading">The Overlook Inn</h1>
+      </header>
+      <section class="display-section">
+        <section class="user-login-section">
+          <h2 class="user-login-header">Welcome user, please login</h2>
+          <section class="user-input-section">
+            <input class="user-input-bar" placeholder="Username" required>
+            <input class="user-password-bar" placeholder="Password" type="password" required>
+            <section class="login-buttons">
+              <button class="user-login-button">User Sign-in</button>
+              <button class="manager-login-button">Manager Sign-in</button>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
