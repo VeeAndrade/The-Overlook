@@ -4,7 +4,7 @@ import Hotel from '../src/Hotel';
 import Booking from '../src/Booking';
 
 describe('Hotel', () => {
-  let hotel, rooms, bookings, user
+  let hotel, rooms, booking1, booking2, bookings, user
 
   beforeEach(() => {
     user = {"id": 1, "name": "Leatha Ullrich"},
@@ -16,13 +16,9 @@ describe('Hotel', () => {
       {"number": 5, "roomType": "single room", "bidet": true, "bedSize": "queen", "numBeds": 2, "costPerNight": 340.17}
     ],
     booking1 = new Booking({"id": "5fwrgu4i7k55hl6tb", "userID": 1, "date": "2020/02/02", "roomNumber": 3, "roomServiceCharges": []}), 
-    booking2 = {"id": "5fwrgu4i7k55hl6ta", "userID": 2, "date": "2020/02/05", "roomNumber": 4, "roomServiceCharges": []},
+    booking2 = new Booking({"id": "5fwrgu4i7k55hl6ta", "userID": 2, "date": "2020/02/05", "roomNumber": 4, "roomServiceCharges": []}),
     bookings = [booking1]
-    hotel = new Hotel(user, rooms, bookings)
-  });
-  
-  it('should know who the user is', () => {
-    expect(hotel.user).to.equal(user)
+    hotel = new Hotel(rooms, bookings)
   });
 
   it('should keep track of all it\'s rooms', () => {
@@ -33,7 +29,8 @@ describe('Hotel', () => {
     expect(hotel.bookings).to.eql(bookings)
   });
 
-  it('should be able to book a room', () => {
-    expect()
+  it('should be able to get the users bookings', () => {
+    booking1 = [{"id": "5fwrgu4i7k55hl6tb", "userID": 1, "date": "2020/02/02", "roomNumber": 3, "roomServiceCharges": []}]
+    expect(hotel.getUserBookings(1)).to.eql(booking1)
   })
 })
