@@ -1,8 +1,15 @@
 class Hotel {
-  constructor(user, rooms, bookings) {
-    this.user = user,
+  constructor(rooms, bookings) {
     this.rooms = rooms,
     this.bookings = bookings 
+  }
+
+  getUserBookings(id) {
+    return this.bookings.filter(booking => booking.userID === id)
+  }
+
+  filterRoom() {
+    
   }
 }
 
