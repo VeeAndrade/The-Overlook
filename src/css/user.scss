@@ -21,7 +21,7 @@
 
 .client-display-section {
   width: 100%;
-  height: 160vh;
+  height: 180vh;
   display: flex;
   justify-content: center;
   padding-top: 2%;
@@ -37,7 +37,7 @@
 .client-booking-section {
   display: flex;
   width: 100%;
-  height: 25%;
+  height: 30%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url('../images/cherry-blossom-background-3.jpg')no-repeat center center;
   background-size: cover;
@@ -94,7 +94,7 @@
 //dashboard
 
 .client-dashboard-summary {
-  display: flex; //***** <------here place flex
+  display: flex; 
   margin-top: 2.1%;
   width: 100%;
   height: 82%;
@@ -260,7 +260,7 @@
 }
 
 .room-booking-container {
-  display: flex;
+  display: none;
   width: 100%;
   height: 80%;
   margin-top: 20px;
@@ -283,7 +283,6 @@
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  // border: solid 2px red;
 }
 
 .filter-room-label {
@@ -294,7 +293,6 @@
 }
 
 .select-container {
-  // @extend .booking-date-button;
   margin-left: 10px;
   width: 180px;
 }
@@ -315,7 +313,6 @@
   justify-content: center;
   align-content: center;
   margin-bottom: 20px;
-  padding-top: 200px;
   padding-bottom: 15px;
   flex-flow: row wrap;
   overflow: scroll;
@@ -357,4 +354,52 @@
 .book-room-button {
   @extend .booking-date-button;
   width: 115px;
+}
+
+.fierce-apology-container {
+  width: 100%;
+  height: 25%;
+  margin-top: 15px;
+  display: none;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../images/cherry-blossom-background-6.jpg')no-repeat center center;
+  background-size: cover;
+}
+
+.fierce-apology-paragraph-section {
+  width: 96%;
+  height: 75%;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(rgba(176, 176, 176, 0.701), rgba(255, 255, 255, 0.646));
+  border-radius: 2px;
+}
+
+.fierce-apology-paragraph {
+  display: flex;
+  width: 95%;
+  height: 75%;
+  align-self: center;
+  border: solid 1px rgb(26, 25, 25);
+  color: rgb(26, 25, 25);
+  font-size: 1.2em;
+}
+
+.room-booked-section {
+  border-style: double;
+  width: 75%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booked-reservation-message {
+  font-size: 1.3em;
+
 }
