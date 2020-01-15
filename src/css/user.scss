@@ -15,10 +15,6 @@
   @extend .header-heading;
 }
 
-.client-header-navbar-button {
-  @extend .header-navbar-button
-}
-
 .client-display-section {
   width: 100%;
   height: 180vh;
@@ -81,13 +77,14 @@
   border-radius: 3px;
   width: 150px;
   height: 35px;
-  background-color: rgb(49, 106, 49);
-  color: rgb(211, 211, 211);
+  background-color: #FFA69E;
+  color: #000;
   font-size: 1em;
   border: none;
   
   &:hover {
-    background-color: rgb(24, 67, 24);
+    background-color: #FE686B;
+    cursor: pointer;
   }
 }
 
@@ -160,10 +157,10 @@
   align-content: center;
   justify-content: center;
   border-radius: 5px;
-  background: linear-gradient(rgb(111, 218, 237), rgba(121, 213, 219, 0.591));
+  background: linear-gradient(#84DCC6, #A5FFD6);
   
     &:hover {
-      background-color: rgb(57, 88, 210);
+      background-color: rgb(79, 155, 169);
     }
 }
 
@@ -300,6 +297,7 @@
 .submit-option-button {
   @extend .booking-date-button;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .rooms-available-display {
@@ -319,9 +317,9 @@
 }
 
 .single-room-info {
-  width: 96%;
+  width: 90%;
   height: 130px;
-  background: linear-gradient(rgb(111, 218, 237), rgba(121, 213, 219, 0.591));
+  background: linear-gradient(#84DCC6, #A5FFD6);
   margin-top: 10px;
   border-radius: 2px;
 }
@@ -347,13 +345,14 @@
 
 .single-room-text {
   font-size: 1em;
-  color: rgb(0, 0, 0);
+  color: #000;
   width: 79%;
 }
 
 .book-room-button {
   @extend .booking-date-button;
   width: 115px;
+  cursor: pointer;
 }
 
 .fierce-apology-container {
@@ -386,7 +385,7 @@
   height: 75%;
   align-self: center;
   border: solid 1px rgb(26, 25, 25);
-  color: rgb(26, 25, 25);
+  color: #000;
   font-size: 1.2em;
 }
 
@@ -401,5 +400,4 @@
 
 .booked-reservation-message {
   font-size: 1.3em;
-
 }

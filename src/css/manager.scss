@@ -1,0 +1,297 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.manager-main-page {
+  display: flex;
+  width: 100%;
+  height: 120vh;
+  flex-flow: row;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../images/cherry-blossom-background-7.jpg')no-repeat center center;
+}
+
+// side column
+
+.manager-side-column {
+  display: flex;
+  width: 25%;
+  height: 120vh;
+  flex-flow: row wrap;
+  justify-content: center;
+  background: linear-gradient(rgb(176, 176, 176), rgba(255, 255, 255, 0.297));
+}
+
+.side-column-label {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.column-label {
+  align-self: center;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.column-label-date {
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.rooms-available-container {
+  border-style: double;
+  width: 95%;
+  height: 725px;
+  display: flex;
+  align-content: center;
+  overflow: scroll;
+  flex-flow: column;
+}
+
+.rooms-display {
+  width: 90%;
+  height: 70px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 2px;
+  background: linear-gradient(#84DCC6, #A5FFD6);
+}
+
+.single-room {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.room-detail {
+  font-size: 1.1em;
+}
+
+// top stat section
+
+.main-manager-display {
+ width: 75%;
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+}
+
+.hotel-top-section {
+  width: 95%;
+  height: 20%;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: row;
+  margin-top: 15px;
+  background: linear-gradient(rgb(176, 176, 176), rgba(255, 255, 255, 0.297));
+}
+
+.rooms-occupied-container,
+.total-revenue-container {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.rooms-occupied-label-container,
+.total-revenue-label-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.rooms-label-text,
+.revenue-label-text {
+  display: flex;
+  align-self: flex-end;
+  align-content: center;
+  text-align: center;
+  height: 50%;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.occupied-percent-container,
+.revenue-dollar-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.percentage-text,
+.dollar-text {
+  font-size: 2.2em;
+}
+
+// Customer search section
+
+.customer-search-section {
+  width: 95%;
+  height: 72.5%;
+  margin-top: 20px;
+  display: flex;
+  background: linear-gradient(rgb(176, 176, 176), rgba(255, 255, 255, 0.297));
+  flex-flow: column;
+  align-items: center;
+}
+
+.manager-customer-input-section {
+  border-bottom: solid 1px ;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  width: 95%;
+  height: 15%;
+}
+
+.manager-booking-section {
+  @extend .manager-customer-input-section;
+  margin-top: 10px;
+  border-bottom: none;
+}
+
+.booking-heading-wrapper,
+.search-heading-wrapper {
+  width: 100%;
+}
+
+.customer-search-heading {
+  height: 20%;
+  font-weight: 300;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.manager-booking-heading {
+  @extend .customer-search-heading;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+
+.manager-booking-input,
+.customer-search-input {
+  display: flex;
+  justify-content: space-around;
+  height: 80%;
+  align-content: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-label,
+.input-label {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.manager-booking-date,
+.customer-username-input {
+  width: 25%;
+  height: 45%;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding-left: 10px;
+  border: none;
+  font-size: 1em;
+}
+
+.search-booking-button,
+.search-username-button {
+  @extend .customer-username-input;
+  width: 15%;
+  background-color: #FFA69E;
+  color: #000;
+  padding-left: 0px;
+  
+  &:hover {
+    background-color: #FE686B;
+    cursor: pointer;
+  }
+}
+
+.show-customer-bookings {
+  border: solid 2px;
+  width: 95%;
+  height: 63%;
+}
+
+.results-paragraph{
+  border-bottom: solid 1px;
+  width: 95%;
+  height: 10%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.customer-past-future-booking-container {
+  width: 100%;
+  height: 90%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.room-reserved-section {
+  @extend .room-booked-section;
+  width: 90%;
+  margin-top: 111px;
+}
+
+.delete-reservation-button {
+  width: 75%;
+  height: 30px;
+  border-radius: 2px;
+  color: #000;
+  background-color: #FFA69E;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: #FE686B;
+    }
+}
+
+.manager-booking-info {
+  width: 95%;
+  padding: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  // background: rgb(162, 160, 160);
+  background: linear-gradient(#84DCC6, #A5FFD6);
+  border-radius: 2px;
+}
+
+.booking-delete-btn,
+.booking-detail-last,
+.booking-detail-mid,
+.booking-detail-first {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
