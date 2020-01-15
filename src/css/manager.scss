@@ -52,8 +52,8 @@
   height: 725px;
   display: flex;
   align-content: center;
-  justify-content: center;
   overflow: scroll;
+  flex-flow: column;
 }
 
 .rooms-display {
@@ -62,8 +62,9 @@
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  align-self: center;
   border-radius: 2px;
-  background: linear-gradient(rgb(142, 187, 138), rgb(191, 225, 188))
+  background: linear-gradient(#84DCC6, #A5FFD6);
 }
 
 .single-room {
@@ -219,9 +220,14 @@ form {
 .search-username-button {
   @extend .customer-username-input;
   width: 15%;
-  background-color: rgb(49, 106, 49);
-  color: rgb(211, 211, 211);
+  background-color: #FFA69E;
+  color: #000;
   padding-left: 0px;
+  
+  &:hover {
+    background-color: #FE686B;
+    cursor: pointer;
+  }
 }
 
 .show-customer-bookings {
@@ -243,4 +249,49 @@ form {
 .customer-past-future-booking-container {
   width: 100%;
   height: 90%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.room-reserved-section {
+  @extend .room-booked-section;
+  width: 90%;
+  margin-top: 111px;
+}
+
+.delete-reservation-button {
+  width: 75%;
+  height: 30px;
+  border-radius: 2px;
+  color: #000;
+  background-color: #FFA69E;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: #FE686B;
+    }
+}
+
+.manager-booking-info {
+  width: 95%;
+  padding: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  // background: rgb(162, 160, 160);
+  background: linear-gradient(#84DCC6, #A5FFD6);
+  border-radius: 2px;
+}
+
+.booking-delete-btn,
+.booking-detail-last,
+.booking-detail-mid,
+.booking-detail-first {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
 }

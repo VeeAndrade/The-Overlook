@@ -27,25 +27,9 @@
   align-items: center;
 }
 
-.header-navbar-button {
-  height: 100%;
-  width: 5%;
-  background-color: rgb(50, 52, 53);
-  border: none;
-  margin: 0 0 0 1%;
-}
-
-.lines {
-  width: 75%;
-  height: 4px;
-  background-color: rgb(211, 211, 211);
-  margin: 10px 0;
-  transition: 0.4s;
-}
-
 .header-heading {
   font-size: 2.5em;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 1%;
   color: rgb(211, 211, 211);
   font-family: 'Gayathri', sans-serif;
@@ -113,14 +97,14 @@
   padding: 10px;
   outline: none;
   border: none;
-  color: rgb(176, 176, 176);
-  background-color: #522D63;
+  color: #000;
+  background-color: #FFA69E;
   font-size: .9em;
   border: none;
   
-    &:hover {
-      cursor: pointer;
-      background-color: rgb(50, 21, 79);
+  &:hover {
+    cursor: pointer;
+    background-color: #FE686B;
     }
 }
 
