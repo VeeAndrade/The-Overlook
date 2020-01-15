@@ -7,6 +7,7 @@ import $ from 'jquery';
 // An example of how you tell webpack to use a CSS (SCSS) file
 import '../src/css/base.scss'
 import '../src/main-client'
+import '../src/main-manager'
 // An example of how you tell webpack to use an image (also need to link to it in the index.html)
 import './images/cherry-blossom-background-4.jpg'
 import Hotel from './Hotel';
@@ -23,18 +24,10 @@ $('.manager-login-button').click(findOutWhoTheUserIs)
 function findOutWhoTheUserIs() {
   let userValue = $('.user-input-bar').val();
   if(userValue === 'manager') {
-    return 'manager';
+    window.location.href = './manager.html'
   } else if (userValue.includes('customer')) {
     let userInput = userValue.split('r')
     userId = userInput[1];
     window.location.href = './client.html?userId=' + userId
   }
 }
-
-function displayClientPage(userId) {
-}
-
-function grabAllBookings(userId) {
-
-}
-console.log('index.js is here')
