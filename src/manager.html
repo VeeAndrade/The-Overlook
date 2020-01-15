@@ -2,10 +2,74 @@
 <html lang="en-US">
   <head>
     <title>
-
+      Manager Page
     </title>
   </head>
   <body>
-
+    <header class="client-header-navbar">
+      <h1 class="client-header-heading">The Cherry Blossom Hotel</h1>
+    </header>
+    <main class="manager-main-page">
+      <aside class="manager-side-column">
+        <section class="side-column-label">
+          <p class="column-label column-label-text">Room's Available Today</p>
+          <p class="column-label column-label-date"></p>
+        </section>
+        <section class="rooms-available-container">
+        </section>
+      </aside>
+      <section class="main-manager-display">
+      <section class="hotel-top-section">
+        <section class="total-revenue-container">
+          <div class="total-revenue-label-container">
+            <p class="revenue-label-text">TOTAL REVENUE:</p>
+          </div>
+          <div class="revenue-dollar-container">
+            <p class="dollar-text">$ --</p>
+          </div>
+        </section>
+        <section class="rooms-occupied-container">
+          <div class="rooms-occupied-label-container">
+            <p class="rooms-label-text">ROOMS OCCUPIED:</p>
+          </div>
+          <div class="occupied-percent-container">
+            <p class="percentage-text">--%</p>
+          </div>
+        </section>
+      </section>
+      <section class="customer-search-section">
+        <section class="manager-customer-input-section">
+          <div class="search-heading-wrapper">
+            <h3 class="customer-search-heading">Customer Search</h3>
+          </div>
+          <div class="customer-search-input">
+            <form>
+            <label class="input-label">Customer Username:</label>
+            <input class="customer-username-input" placeholder="customer#" type="text">
+            <button class="search-username-button">Search</button>
+            </form>
+          </div>
+        </section>
+        <section class="manager-booking-section">
+          <div class="booking-heading-wrapper">
+            <h3 class="manager-booking-heading">Reserve A Room</h3>
+          </div>
+          <div class="manager-booking-input">
+            <form>
+              <label class="booking-label">Date:</label>
+              <input class="manager-booking-date" type="date" required pattern="\d{4}-\d{2}-\d{2}">
+              <button class="search-booking-button">Search</button>
+            </form>
+          </div>
+        </section>
+        <section class="show-customer-bookings">
+          <p class="results-paragraph">Results:</p>
+          <section class="customer-past-future-booking-container">
+            
+          </section>
+        </section>
+      </section>
+      </section>
+    </main>
   </body>
 </html>
