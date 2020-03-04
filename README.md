@@ -4,6 +4,8 @@ In this project, I built a website designed to act as a hotel management tool fo
 
 ### Screenshots:
 <img width="1440" alt="Screen Shot 2020-03-03 at 9 18 11 PM" src="https://user-images.githubusercontent.com/51575613/75845012-0db99d80-5d95-11ea-84bb-647464ec36b3.png">
+<img width="1440" alt="Screen Shot 2020-03-03 at 9 19 56 PM" src="https://user-images.githubusercontent.com/51575613/75845076-3772c480-5d95-11ea-97a2-34c2709d8921.png">
+<img width="1440" alt="Screen Shot 2020-03-03 at 9 20 51 PM" src="https://user-images.githubusercontent.com/51575613/75845094-45284a00-5d95-11ea-91f0-8b5a351e1d8c.png">
 
 ### Goals and Objectives
 
